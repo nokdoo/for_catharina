@@ -1,0 +1,41 @@
+% layout 'default';
+% title 'Piano Chords';
+<script type="text/javascript">
+	var a;
+	var chords = new Object();
+	function make()
+	{
+		if(!a)
+		{
+			a = document.getElementById("chord");
+		}
+		var base = document.getElementById("base").value;
+		base = base.replace("base", "");
+		var scale = document.getElementById("scale").value;
+		var chord = scale+base;
+		var img_unit = chords[chord];
+		if(!img_unit)
+		{
+			img_unit = [document.createElement("br"), document.createElement("br"), document.createElement("img")] ;
+			//img_unit[2].setAttribute("src", "/chord/piano/"+chord+".png");
+			img_unit[2].setAttribute("src", encodeURIComponent("/chord/piano/"+chord+".png"));
+			chords[chord] = img_unit;
+		}
+		var div_chord = document.getElementById("chord");
+		div_chord.prepend(img_unit[0]);
+		div_chord.prepend(img_unit[1]);
+		div_chord.prepend(img_unit[2]);
+	}
+</script>
+<body>
+<p align="center">
+  We provide a number of piano chords.<br>
+  Select scale and base and Click <br>
+  to make chord image you want to see.<br>
+  <%= select_field scale => $scale, id => 'scale' %>
+  <%= select_field base => $base, id => 'base' %>
+  <button type="button" onclick="make()"> Click! </button>
+  <br>
+  <div id="chord" align="center"></div>
+</p>
+</body>

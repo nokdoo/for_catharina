@@ -1,0 +1,5 @@
+% layout 'default';
+% title 'Welcome';
+<p>
+  <%= link_to 'click here' => '/chord' %> to chord page 
+</p>

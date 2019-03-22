@@ -1,0 +1,45 @@
+[2019-03-17 11:43:08.51201] [12590] [debug] GET "/" (c749b0f4)
+[2019-03-17 11:43:08.51322] [12590] [error] syntax error at /home/nokdoot/for_catharina/script/../lib/ForCatharina/Controller/Chord.pm line 10, near ")
+
+  my "
+Global symbol "@scale" requires explicit package name (did you forget to declare "my @scale"?) at /home/nokdoot/for_catharina/script/../lib/ForCatharina/Controller/Chord.pm line 10.
+Global symbol "@scale" requires explicit package name (did you forget to declare "my @scale"?) at /home/nokdoot/for_catharina/script/../lib/ForCatharina/Controller/Chord.pm line 20.
+Compilation failed in require at (eval 96) line 1.
+
+[2019-03-17 11:43:08.51361] [12590] [debug] Template "exception.development.html.ep" not found
+[2019-03-17 11:43:08.51371] [12590] [debug] Template "exception.html.ep" not found
+[2019-03-17 11:43:08.51379] [12590] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-17 11:43:08.52268] [12590] [debug] 500 Internal Server Error (0.010678s, 93.650/s)
+[2019-03-17 11:43:28.86777] [12623] [debug] GET "/" (c749b0f4)
+[2019-03-17 11:43:28.86903] [12623] [debug] Routing to controller "ForCatharina::Controller::Chord" and action "html"
+[2019-03-17 11:43:28.87003] [12623] [debug] Rendering template "chord/piano/chord.html.ep"
+[2019-03-17 11:43:28.87250] [12623] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-17 11:43:28.87321] [12623] [debug] 200 OK (0.005448s, 183.554/s)
+[2019-03-17 11:44:30.54918] [12698] [debug] GET "/" (c749b0f4)
+[2019-03-17 11:44:30.55001] [12698] [debug] Routing to controller "ForCatharina::Controller::Chord" and action "html"
+[2019-03-17 11:44:30.55033] [12698] [error] Can't locate object method "client_ip" via package "ForCatharina::Controller::Chord" at /home/nokdoot/for_catharina/script/../lib/ForCatharina/Controller/Chord.pm line 8.
+
+[2019-03-17 11:44:30.55076] [12698] [debug] Template "exception.development.html.ep" not found
+[2019-03-17 11:44:30.55085] [12698] [debug] Template "exception.html.ep" not found
+[2019-03-17 11:44:30.55094] [12698] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-17 11:44:30.56246] [12698] [debug] 500 Internal Server Error (0.013267s, 75.375/s)
+[2019-03-17 11:44:56.43595] [12701] [debug] GET "/" (c749b0f4)
+[2019-03-17 11:44:56.43677] [12701] [debug] Routing to controller "ForCatharina::Controller::Chord" and action "html"
+[2019-03-17 11:44:56.43816] [12701] [debug] Rendering template "chord/piano/chord.html.ep"
+[2019-03-17 11:44:56.44014] [12701] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-17 11:44:56.44080] [12701] [debug] 200 OK (0.00485s, 206.186/s)
+[2019-03-17 11:48:02.53483] [12774] [debug] GET "/" (c749b0f4)
+[2019-03-17 11:48:02.53578] [12774] [debug] Routing to controller "ForCatharina::Controller::Chord" and action "html"
+[2019-03-17 11:48:02.53633] [12774] [debug] Rendering template "chord/piano/chord.html.ep"
+[2019-03-17 11:48:02.53856] [12774] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-17 11:48:02.53939] [12774] [debug] 200 OK (0.004555s, 219.539/s)
+[2019-03-17 11:49:28.14122] [12888] [debug] GET "/" (8a40f099)
+[2019-03-17 11:49:28.14221] [12888] [debug] Routing to controller "ForCatharina::Controller::Chord" and action "html"
+[2019-03-17 11:49:28.14264] [12888] [debug] Rendering template "chord/piano/chord.html.ep"
+[2019-03-17 11:49:28.14481] [12888] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-17 11:49:28.14550] [12888] [debug] 200 OK (0.004282s, 233.536/s)
+[2019-03-17 11:49:50.11274] [12893] [debug] GET "/" (8a40f099)
+[2019-03-17 11:49:50.11358] [12893] [debug] Routing to controller "ForCatharina::Controller::Chord" and action "html"
+[2019-03-17 11:49:50.11403] [12893] [debug] Rendering template "chord/piano/chord.html.ep"
+[2019-03-17 11:49:50.11576] [12893] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-17 11:49:50.11635] [12893] [debug] 200 OK (0.00362s, 276.243/s)
